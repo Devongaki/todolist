@@ -1,0 +1,42 @@
+/* colors.css */
+:root {
+  /* Primary Colors */
+  --primary: #F2F1E9;
+  --primary-base: #021859;
+  --primary-light: #1237A6;
+  --primary-dark: #011640;
+
+  /* Secondary Colors */
+  --secondary: #3663BF;
+  --secondary-light: #5A85D4;
+  --secondary-dark: #234F94;
+
+  /* Tertiary Colors */
+  --tertiary: #F2F1E9;
+  --tertiary-light: #FFFFFF;
+  --tertiary-dark: #CFCFBC;
+
+  /* Accent Colors */
+  --accent: #FF8C42;
+  --accent-light: #FFA463;
+  --accent-dark: #D16A26;
+
+  /* Hover & Active States */
+  --hover: #3059A4;
+  --active: #1E4480;
+  --hover-accent: #E07B35;
+  --active-accent: #C76525;
+
+  /* Neutral / Text */
+  --text-primary: #021859;
+  --text-secondary: #5A85D4;
+  --text-light: #FFFFFF;
+
+    /* Status Colors */
+  --success: #28a745; /* Green */
+ --danger: #dc3545; /* Red */
+--danger-dark: #a71d2a;
+
+
+
+}

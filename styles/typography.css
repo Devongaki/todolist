@@ -1,0 +1,31 @@
+/* typography.css */
+:root {
+  /* Font Sizes */
+  --font-xs: 0.75rem; /* 12px */
+  --font-sm: 0.875rem; /* 14px */
+  --font-md: 1rem; /* 16px (Base) */
+  --font-lg: 1.25rem; /* 20px */
+  --font-xl: 1.5rem; /* 24px */
+  --font-2xl: 2rem; /* 32px */
+  --font-3xl: 2.5rem; /* 40px */
+  --font-4xl: 3rem; /* 48px */
+
+  /* Font Weights */
+  --font-thin: 100;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* Padding Sizes (from small to largest) */
+  --padding-xs: 0.25rem; /* 4px */
+  --padding-sm: 0.5rem; /* 8px */
+  --padding-md: 1rem; /* 16px */
+  --padding-lg: 1.5rem; /* 24px */
+  --padding-xl: 2rem; /* 32px */
+  --padding-2xl: 3rem; /* 48px */
+  --padding-3xl: 4rem; /* 64px */
+}
