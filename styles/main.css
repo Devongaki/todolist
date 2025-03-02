@@ -1,0 +1,180 @@
+@import url("./color.css");
+@import url("./typography.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background: var(--primary);
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--primary-base);
+}
+
+.container {
+  width: 100%;
+  padding: var(--padding-md);
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Base Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.create {
+  background-color: var(--primary-base, #1237a6); /* Primary color */
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Light Button Variant */
+.btn-light {
+  background-color: var(--secondary, #3663bf);
+  color: white;
+}
+
+/* Hover Effect */
+.btn.create:hover {
+  background-color: var(--primary-dark, #011640);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Active (Click) Effect */
+.btn.create:active {
+  background-color: var(--active, #021859);
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled State */
+.btn.create:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.header-title {
+  font-size: var(--font-3xl);
+  font-weight: var(--font-black);
+}
+.search {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px auto;
+}
+
+.search input {
+  width: 300px;
+  padding: 10px 15px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.search input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 91, 187, 0.5);
+}
+
+.search input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+
+.todos li {
+  background: #423a6f;
+  color: #fff;
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-group-item {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+}
+
+.list-group-item span {
+  padding: 12px 16px;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.filtered {
+  display: none !important;
+}
+
+.btn:hover {
+  background: #423a6f;
+  color: #fff;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-radius: 13px 13px;
+  transition: 0.8s;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus Effect */
+.form-control:focus {
+  border-color: var(--primary, #1237a6); /* Uses your primary color */
+  box-shadow: 0 0 8px rgba(18, 55, 166, 0.3); /* Glowing effect */
+}
+
+/* Disabled State */
+.form-control:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Error State */
+.form-control.error {
+  border-color: var(--danger, #dc3545);
+  box-shadow: 0 0 8px rgba(220, 53, 69, 0.3);
+}
